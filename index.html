@@ -8,11 +8,44 @@
     <script src="script.js"></script>
 </head>
 <body>
-	<h1>Tareas</h1>
+    <div class="container">
+        <button onclick="abrirmenu()">Agregar Tarea</button>
+    </div>
     
-    <button onclick="abrirMenu()"> Agregar Tarea </button>
+    <div id="menuRecordatorio">
+        <h2>Añadir Tarea</h2>
+        <div class="title">
+            <h3>Titulo</h3>
+            <input type="text" id="titulo" size="10">
+            <h3>Descripcion</h3>
+            <input type="text" id="descripcion">
+            <h3>Fecha Límite</h3>
+            <input type="date" id="fecha">
+            <h3>Categoria</h3>
+            <select id="categoria">
+                <option value = "">   </option>
+                <option value="trabajo">Trabajo</option>
+                <option value="personal">Personal</option>
+                <option value="estudio">Estudio</option>
+                <option value="Ocio">Ocio</option>
+            </select>
 
-    <table>
+            <h3>Importancia</h3>
+            <select id="importancia">
+                <option value="">   </option>
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+            <h3>Recordatorio</h3>
+            <input type="time" id="recordatorio">
+            <button onclick="addTask()">Añadir Tarea</button>
+        </div>
+
+    </div>
+
+    <!-- Tabla de tareas -->
+    <table id="tabla">
         <!-- Titulos -->
          <tthead>
             <tr>
