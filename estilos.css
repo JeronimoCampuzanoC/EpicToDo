@@ -13,3 +13,13 @@ h1{
 #myTextField{
     text-align: center;
 }
+
+table{
+    width: 100%;
+    border : 1px solid #333;
+    margin-top: 10px;
+}
+tr,th,td{
+    border : 1px solid #333;
+    text-align: center;
+}
