@@ -4,10 +4,55 @@ h1{
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+.title {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no caben en una línea */
+}
+.title h3{
+    margin-right: 7px; /* Margen derecho entre elementos */
+    margin-top:35px;
+
+}
+h2{
+    text-align: center;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+}
+.title input {
+    display: flex; /* Crece y encoge igualmente, tamaño automático */
+    margin-right: 20px; /* Margen derecho entre elementos */
+    font-size: 12px;
+    margin-top: 30px;
+    width: 100px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+
+}
+
+.title select{
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.title button{
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 45px;
+}
+
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin : 10px;
+    margin-top: 20px;
 }
 
 #myTextField{
@@ -19,7 +64,21 @@ table{
     border : 1px solid #333;
     margin-top: 10px;
 }
-tr,th,td{
+tr,th{
+    border : 1px solid #333;
+    width: 150px; /* Ajusta el ancho según sea necesario */
+    max-width: 100px; /* Ancho máximo */
+
+}
+td{
     border : 1px solid #333;
     text-align: center;
+    width: 100px;
+    max-width: 100px;
+    height: 30px;
+    word-wrap: break-word;
+}
+
+#menuRecordatorio {
+    display: none; /* Ocultar el menú al cargar la página */
 }
